@@ -139,11 +139,11 @@
 					select.find('li:last-of-type').click()
 			}, 1000)
 
-			if (!instance.storage(string)){
-				this.alert('welcomealert', this.instance.t('firstStepText1')+' v'+this.version, "<strong>"+this.instance.t('firstStepText2')+"</strong><p>"+this.instance.t('firstStepText3')+"</p><p>"+this.instance.t('firstStepText4')+"</p><p>"+this.instance.t('firstStepText5')+"</p><p>"+this.instance.t('firstStepText6')+"</p><p><strong>"+this.instance.t('firstStepText7')+"</strong> "+this.instance.t('firstStepText8')+"</p>", function(){
+			/**if (!instance.storage(string)){
+				this.alert('welcomealert', this.instance.t('firstStepText2')+"</strong><p>"+this.instance.t('firstStepText3')+"</p><p>"+this.instance.t('firstStepText4')+"</p><p>"+this.instance.t('firstStepText5')+"</p><p>"+this.instance.t('firstStepText6')+"</p><p><strong>"+this.instance.t('firstStepText7')+"</strong> "+this.instance.t('firstStepText8')+"</p>", function(){
 					instance.storage(string, true);
 				})
-			}
+			}**/
 		 },
 
 		/**
@@ -526,7 +526,7 @@
 			return this.optedOut.indexOf(name) !== -1
 		 },
 
-		 /**alert: function (id, title, text, callback) {
+		 alert: function (id, title, text, callback) {
 			var footer = $('<div class="popup-prompt-buttons"><div style="text-align:right"><input type="button" class="ok-btn base-button-arrow-small popup-prompt-button-continue" value="' + BBLog.t('ok') + '"/><div class="base-clear"></div></div>')
 			if (!callback)
 				callback = function () {}
@@ -540,9 +540,9 @@
 				BBLog.closeAllPopups()
 			})
 			BBLog.popup(id, title, text, footer)
-		 }**/
+		 }
 	}
 	window.setTimeout(function() {
 		BBLog.handle('add.plugin', plugin)
-	}, 0)
+	}, 1000)
 })
