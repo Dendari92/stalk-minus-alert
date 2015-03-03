@@ -544,5 +544,5 @@
 	}
 	window.setTimeout(function() {
 		BBLog.handle('add.plugin', plugin)
-	}, 1000)
+	}, 0)
 })
