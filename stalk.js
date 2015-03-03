@@ -526,7 +526,7 @@
 			return this.optedOut.indexOf(name) !== -1
 		 },
 
-		 /**alert: function (id, title, text, callback) {
+		 alert: function (id, title, text, callback) {
 			var footer = $('<div class="popup-prompt-buttons"><div style="text-align:right"><input type="button" class="ok-btn base-button-arrow-small popup-prompt-button-continue" value="' + BBLog.t('ok') + '"/><div class="base-clear"></div></div>')
 			if (!callback)
 				callback = function () {}
@@ -540,7 +540,7 @@
 				BBLog.closeAllPopups()
 			})
 			BBLog.popup(id, title, text, footer)
-		 }**/
+		 }
 	}
 	window.setTimeout(function() {
 		BBLog.handle('add.plugin', plugin)
