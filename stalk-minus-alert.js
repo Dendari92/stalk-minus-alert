@@ -13,7 +13,7 @@
 	'use strict';
 
 	var plugin = {
-		/** @type 	{String} 		The extension's id. 		*/**
+		/** @type 	{String} 		The extension's id. 		*/
 		id: 'extended-friends-plugin',
 		/** @type 	{String}		The extension's name.  		*/
 		name: 'Extended Friendlist',
